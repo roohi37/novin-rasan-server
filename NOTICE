@@ -1,0 +1,25 @@
+نوین‌رسان (Novin Rasan) — پیام‌رسان خودمیزبان
+Copyright 2026 Novin Sanaat (نوین صنعت)
+
+این محصول بر پایهٔ پروژهٔ متن‌باز teamgram-server ساخته شده است:
+  teamgram-server — Copyright 2022 Teamgram Authors
+  https://github.com/teamgram/teamgram-server
+  مجوز: Apache License 2.0
+
+و کلاینت وب بر پایهٔ:
+  telegram-tt (tweb) — Copyright 2020 Ajaxy
+  https://github.com/Ajaxy/telegram-tt
+  مجوز: GPL-3.0
+
+و پایهٔ اپ اندروید:
+  Telegram for Android — Copyright Nikolai Kudashov (DrKLO)
+  https://github.com/DrKLO/Telegram
+  مجوز: GPL-2.0
+
+تغییرات و توسعه‌های نوین‌رسان (نسبت به نسخهٔ اصلی teamgram-server):
+  - پوش آفلاین end-to-end (صف‌بندی در سرویس sync + تحویل مجدد در سرویس session)
+  - باگ‌فیکس salt-race در سرویس session
+  - گارد FromPeer در سرویس dialog (جلوگیری از panic)
+  - بومی‌سازی فارسی/RTL و برندینگ
+
+Apache License 2.0 مستلزم حفظ این اعلان‌ها و فایل LICENSE است.

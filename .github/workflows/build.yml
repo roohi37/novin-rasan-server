@@ -1,0 +1,45 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+          cache: true
+
+      - name: Download modules
+        run: go mod download
+
+      - name: Build all services
+        run: |
+          set -e
+          mkdir -p teamgramd/bin
+          go build -o teamgramd/bin/idgen        ./app/service/idgen/cmd/idgen
+          go build -o teamgramd/bin/status       ./app/service/status/cmd/status
+          go build -o teamgramd/bin/dfs          ./app/service/dfs/cmd/dfs
+          go build -o teamgramd/bin/media        ./app/service/media/cmd/media
+          go build -o teamgramd/bin/authsession  ./app/service/authsession/cmd/authsession
+          go build -o teamgramd/bin/biz          ./app/service/biz/biz/cmd/biz
+          go build -o teamgramd/bin/msg          ./app/messenger/msg/cmd/msg
+          go build -o teamgramd/bin/sync         ./app/messenger/sync/cmd/sync
+          go build -o teamgramd/bin/bff          ./app/bff/bff/cmd/bff
+          go build -o teamgramd/bin/session      ./app/interface/session/cmd/session
+          go build -o teamgramd/bin/gnetway      ./app/interface/gnetway/cmd/gnetway
+          ls -la teamgramd/bin
+
+      - name: Verify key patches present
+        run: |
+          test -f app/messenger/sync/internal/dao/push_queue.go      && echo "✅ sync push_queue"
+          test -f app/interface/session/internal/dao/push_queue.go   && echo "✅ session push_queue"

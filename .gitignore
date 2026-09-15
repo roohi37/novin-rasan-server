@@ -1,0 +1,50 @@
+# بیلد و باینری‌ها
+teamgramd/bin/
+teamgramd/bin.bak-*/
+*.exe
+*.bin
+*.new
+*.new2
+
+# دیتا و دادهٔ runtime
+data/
+*.sql
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# کانفیگ‌های واقعی (رمز داخلشان است) — فقط *.example منتشر شود
+teamgramd/etc/*.yaml
+!teamgramd/etc/*.yaml.example
+
+# رمزها و اعتبارها (هرگز commit نشود)
+.env
+*.env
+.secrets/
+*secret*
+*credential*
+*.key
+*.pem
+master-secrets.json
+*apikey*
+*apikey*.txt
+ghasedak*.key
+
+# کش و موقت
+.cache/
+tmp/
+*.tmp
+*.bak
+*.bak-*
+*.BAK*
+*~
+
+# فایل‌های سیستمی
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
