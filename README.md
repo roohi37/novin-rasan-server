@@ -40,11 +40,12 @@ mysql -e "CREATE DATABASE teamgram CHARACTER SET utf8mb4;"
 ## 🤝 حمایت مالی (Support)
 اگر می‌خواهی از این پروژه حمایت کنی:
 
+- **USDT (شبکه TRC20):** `TEHAA4SmirDXx1F2v2pFKwzZ4PuhQb2WNm`
+- **TON:** `UQCUTaeHfGmyinhMhN3t7ByT_o_xxrvEqPFSVvc5ijcixn_x`
 - **داخل ایران (ریال):** درگاه پرداخت — [به‌زودی]
-- **بین‌المللی (کریپتو):**
-  - USDT (TRC20): `[آدرس کیف پول را اینجا بگذار]`
-  - BTC: `[آدرس]`
 - **نسخهٔ Enterprise (پشتیبانی اختصاصی + قابلیت‌های افزوده):** برای دریافت، از طریق Issues/ایمیل تماس بگیر.
+
+> ⚠️ فقط با شبکهٔ اعلام‌شده واریز کنید. واریز در شبکهٔ اشتباه باعث از‌دست‌رفتن دارایی می‌شود.
 
 ## 📄 مجوز
 - سرور: **Apache License 2.0** (بر پایهٔ teamgram-server)
