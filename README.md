@@ -1,7 +1,26 @@
-# نوین‌رسان (Novin Rasan) — پیام‌رسان خودمیزبان
+# نوین‌رسان (Novin Rasan) — پیام‌رسان خودمیزبان فارسی
+
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://resan.novinsanaat.ir:8447)
 
 > پیام‌رسان متن‌باز و خودمیزبان با بومی‌سازی کامل فارسی/RTL، بر پایهٔ [teamgram-server](https://github.com/teamgram/teamgram-server) + [tweb](https://github.com/Ajaxy/telegram-tt).
 > این نسخه شامل پچ‌های اختصاصی: **پوش آفلاین end-to-end**، فیکس salt-race، و گارد FromPeer.
+
+## 👀 دموی زنده
+
+بدون هیچ نصب یا ثبت‌نام، نسخهٔ زنده را در مرورگر ببینید:
+
+**https://resan.novinsanaat.ir:8447**
+
+## 🚀 نصب، راه‌اندازی و پشتیبانی
+
+اگر می‌خواهید این پیام‌رسان روی سرور سازمان شما نصب و راه‌اندازی شود، یا پشتیبانی و برندینگ اختصاصی نیاز دارید، با ما تماس بگیرید:
+
+- **تلفن / واتس‌اپ:** [شمارهٔ تماس]
+- **ایمیل:** [ایمیل]
+- **خدمات:** نصب و راه‌اندازی، پشتیبانی سالانه، برندینگ اختصاصی، آموزش کارکنان
+
+---
 
 ## ✨ ویژگی‌ها
 - **پوش آفلاین end-to-end**: پیام‌های کاربر آفلاین در صف ذخیره و روی reconnect تحویل داده می‌شوند.
